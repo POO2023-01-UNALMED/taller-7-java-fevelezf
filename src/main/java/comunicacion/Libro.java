@@ -13,10 +13,10 @@ public class Libro extends Escrito {
 		this.edicion=edicion;
 		this.interpretacion=interpretacion;
 	}
-	public void setCo_Autor(String co_autor) {
+	public void setCo_autor(String co_autor) {
 		this.co_autor = co_autor;
 	}
-	public String getCo_Autor() {
+	public String getCo_autor() {
 		return co_autor;
 	}
 	public void setEditorial(String editorial) {
@@ -49,7 +49,7 @@ public class Libro extends Escrito {
 
 	@Override
 	public String toString() {
-		return getOrigen() + "\n" + getTitulo() + "\n" + getAutor() + "\n" + getPaginas() + "\n" + getCo_Autor ()+"\n" + getEditorial()+ "\n" + getEdicion();
+		return getOrigen() + "\n" + getTitulo() + "\n" + getAutor() + "\n" + getPaginas() + "\n" + getCo_autor ()+"\n" + getEditorial()+ "\n" + getEdicion();
 	}
 
 }
