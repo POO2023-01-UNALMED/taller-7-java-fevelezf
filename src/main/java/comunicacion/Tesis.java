@@ -29,7 +29,7 @@ public class Tesis extends Escrito {
 
 	@Override
 	public String toString() {
-		return getOrigen() + "\n" + getTitulo() + "\n" + getAutor() + "\n" + getPaginas() + "\n" + getIdea()+"\n" + getArgumentos()+ "\n" + getConclusion()+ "\n" + getReferencias();
+		return getOrigen() + "\n" + getTitulo() + "\n" + getAutor() + "\n" + getPaginas() + "\n" + getIdea()+"\n" + cantArgumentos()+ "\n" + getConclusion()+ "\n" + getReferencias();
 	}
 
 	public String getIdea() {
@@ -40,7 +40,10 @@ public class Tesis extends Escrito {
 		this.idea = idea;
 	}
 
-	public static int getArgumentos() {
+	public static String[] getArgumentos() {
+		return argumentos;
+	}
+	public static int cantArgumentos() {
 		return argumentos.length;
 	}
 
